@@ -3,6 +3,29 @@
 The objective of this assignment is to build an OCR solution forthe provided dataset. This specific
 dataset is normal and HDR readings of license plates.
 
+### System Configuration
+- Processor : Intel® Core™ i3-8130U
+- RAM : 16 GB
+
+### Module Version
+- python version 	= 3.6
+- numpy  	 	= 1.19.4
+- pandas 	 	= 1.1.4
+- opencv 	 	= 3.4.2
+- matplotlib 		= 3.3.3
+- tqdm              	= 4.54.1
+- tensorflow 		= 1.4.0
+- requests		= 2.25.1
+
+### Tools Used
+- Neural network : [Yolo V2](https://github.com/thtrieu/darkflow)
+- [LabelImg](https://github.com/tzutalin/labelImg)
+
+### Why I am using YOLO ?
+- There are many conventional options to perform OCR and after visualizing the dataset, it can be done way more easily than using big architecture like YOLO.
+- I wanted to try this out for a very long time and now I have a reason for it.
+- In my previous company, I made changes in this architecture in medical domain and from then only I wanted to try this on this type of task.
+
 ### Steps
 	
 1. ISSUE 1 : jupyter auto complete is not working.  <br /> 
@@ -38,8 +61,7 @@ https://github.com/ipython/ipython/issues/10493
 	  5.6. Total = 598 images and annotations. <br /> 
 	
 6. Split data in the ration on 80:20 (train:test) <br /> 
-	6.1. Train data : 479 <br /> 
-	     Test data  : 119 <br /> 
+	6.1. **Train data : 479** <br /> <t/ >**Test data  : 119** <br /> 
 	6.2. Instance of each class present in training data. <br /> 
 	
 		:: ALPHABETS ::
@@ -112,4 +134,11 @@ https://github.com/ipython/ipython/issues/10493
   As, I was not getting any detection even on very low threshold value (not even wrong detection), <br /> 
   I downloaded the original weights and configuration file and ran the inference on sample images (like car,dog, people) but there was no detection at all.<br />
   So, there is a high posibility that the repository i used to implemnt YOLO is not working in first place.
-	
+
+## Future work
+- I started to find the flow in this repo or I will start writing the code for YOLO v3 in keras.
+- I need to get some more data of number plates.
+- WIll annotate characters manually using LableImg
+- Will have to use data augmentation methods to increase size of dataset.
+
+- One ther thing i will try is to use two step approach. First detect number plate in image and then perform OCR on it.
