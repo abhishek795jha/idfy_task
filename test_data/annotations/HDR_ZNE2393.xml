@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>HDR_ZNE2393.png</filename>
+	<path>/home/abhishek/assignments/idfy/yolo_v2/training/images/HDR_ZNE2393.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>207</width>
+		<height>68</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>9</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>139</xmin>
+			<ymin>21</ymin>
+			<xmax>155</xmax>
+			<ymax>51</ymax>
+		</bndbox>
+	</object>
+</annotation>
