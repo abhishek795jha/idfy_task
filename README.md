@@ -26,7 +26,7 @@ dataset is normal and HDR readings of license plates.
 - I wanted to try this out for a very long time and now I have a reason for it.
 - In my previous company, I made changes in this architecture in medical domain and from then only I wanted to try this on this type of task.
 
-### About file in this repository
+### About files in this repository
 - `EDA.ipynb` - Notebook containing exploratory data analysis of dataset.
 - `data_preparation.ipynb` - Notebook used to generate dataset for training.
 - `dataset.csv` - original dataset file provided with dataset.
