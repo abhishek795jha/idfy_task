@@ -26,6 +26,16 @@ dataset is normal and HDR readings of license plates.
 - I wanted to try this out for a very long time and now I have a reason for it.
 - In my previous company, I made changes in this architecture in medical domain and from then only I wanted to try this on this type of task.
 
+### About file in this repository
+- `EDA.ipynb` - Notebook containing exploratory data analysis of dataset.
+- `data_preparation.ipynb` - Notebook used to generate dataset for training.
+- `dataset.csv` - original dataset file provided with dataset.
+- `dataset_details.csv` - updated dataset information.
+- `training_data` - contains images and annotations (in XML format) for training
+- `test_data` - contains images and annotations for testing
+- `visualization` - contains all images of dataset for visualization task.
+- `yolo_v2` - contains neural network used for training.
+
 ### Steps
 	
 1. ISSUE 1 : jupyter auto complete is not working.  <br /> 
@@ -136,9 +146,9 @@ https://github.com/ipython/ipython/issues/10493
   So, there is a high posibility that the repository i used to implemnt YOLO is not working in first place.
 
 ## Future work
-- I started to find the flow in this repo or I will start writing the code for YOLO v3 in keras.
+- I started to find the flaw in this repo or I will start writing the code for YOLO v3 in keras.
 - I need to get some more data of number plates.
-- WIll annotate characters manually using LableImg
+- WIll annotate characters manually using LabelImg
 - Will have to use data augmentation methods to increase size of dataset.
 
 - One ther thing i will try is to use two step approach. First detect number plate in image and then perform OCR on it.
