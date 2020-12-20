@@ -18,12 +18,14 @@ https://github.com/ipython/ipython/issues/10493
 		4.1.1. saved image with above details as new images for proper visualization.  <br /> 
 		4.1.2. saved each image data in csv file for later use.  <br /> 
 		
-	4.2. Only 282 images were stored in for visualization in first run. [FIG 1]  <br /> 
-  `REASON`: We are having repeated filenames in both HDR and NORMAL images, and I was saving images using their quality as prefix and original image name as next part (eg: HDR_I00001.png OR NORMAL_100001.png) so, images were overwritten.   
+	4.2. Only 282 images were stored in for visualization in first run. <br /> 
+  `REASON`: We are having repeated filenames in both HDR and NORMAL images, and I was saving images using their quality as prefix and original image name as next part (eg: HDR_I00001.png OR NORMAL_100001.png) so, images were overwritten.
+  ![alt text](https://github.com/abhishek795jha/idfy_task/blob/main/readme_images/fig_1.png?raw=true)
   `SOLUTION`: I stored each using the number plate reading they contain as suffix part. (eg: HDR_9B52145.png OR NORMAL_9B52145.png) <br /> 
   4.3. In second run, 604 images were stored. <br /> 
   `REASON`: There are images which contains the same number plate but are saved using different names.
   TOTAL 48 IMAGES which contain image of same number plate. <br /> 
+  ![alt text](https://github.com/abhishek795jha/idfy_task/blob/main/readme_images/fig_2.png?raw=true)
   `SOLUTION`: Manually visualized the repeated images and removed those which were having least visible plates among them. <br /> 
  
   5. Starting to annotate 604 images using LabelImg tool. <br /> 
@@ -87,6 +89,9 @@ https://github.com/ipython/ipython/issues/10493
 		7.0.2. updated classes name text file <br /> 
 		7.0.3. change config file (batch size, resolution,checkpoint) <br /> 
 		7.0.4. add line to hide warnings of tensorflow <br /> 
+		
+	** Architecture of YOLO v2** <br/>
+	![alt text](https://github.com/abhishek795jha/idfy_task/blob/main/readme_images/fig_3.png?raw=true) 
     
 	7.1. `[FROM SCRATCH]` Started training using YOLO v2 tiny. Trained for 25 epochs --- NO RESULT <br /> 
   
